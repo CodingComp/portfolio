@@ -3,7 +3,7 @@
   border-radius: 10px;
   display: flex;
 
-  background-color: #3b40489e;
+  background-color: rgb(65, 71, 80);
 
   width: 800px;
   height: 300px;
@@ -11,8 +11,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.infoPanel,
-.imagePanel {
+.infoPanel, .imagePanel {
   flex: 1;
   position: relative;
 }
@@ -31,8 +30,10 @@
   height: 100%;
 
   object-fit: cover;
-  box-shadow: -5px 0px 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: -5px 0px 10px 0 rgba(0, 0, 0, 0);
   border-radius: 0px 8px 8px 0px;
+
+  mask-image: linear-gradient(to left,black 98%,transparent 100%);
 }
 
 .githubLink {
