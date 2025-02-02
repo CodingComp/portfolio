@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./Pages/App.tsx";
+import HomePage from "./Pages/HomePage.tsx";
 import "./CSS/index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
+    <HomePage />
   </React.StrictMode>
 );

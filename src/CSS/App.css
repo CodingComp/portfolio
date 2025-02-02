@@ -1,6 +1,9 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+.projects {
+  max-width: 80rem;
+  margin: auto;
   padding: 2rem;
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 15rem;
 }

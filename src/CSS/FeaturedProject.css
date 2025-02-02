@@ -1,13 +1,14 @@
 .featuredProject {
+  width: 50rem;
+  height: 20rem;
+  margin: auto;
+
+  display: flex;
+  
   border: solid 2px #9e9e9e9e;
   border-radius: 10px;
-  display: flex;
 
   background-color: rgb(65, 71, 80);
-
-  width: 800px;
-  height: 300px;
-
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
