@@ -6,7 +6,7 @@
 
   backdrop-filter: blur(10px);
   background-color: rgb(36, 36, 36, 0.6);
-  box-shadow: 0 0px 10px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0rem 0rem 0.6rem 0.1rem rgba(0, 0, 0, 0.8);
 }
 
 .navbar h1 {

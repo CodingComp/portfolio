@@ -1,0 +1,31 @@
+.homePage {
+  max-width: 100rem;
+  margin: auto;
+}
+
+.aboutMe {
+  margin: 10rem 1rem 10rem 1rem;
+  display: flex;
+}
+
+.aboutMeInfo {
+  margin: 2rem;
+  flex: 1;
+  font-size: 1.5rem;
+}
+
+.aboutMe img {
+  flex: 0.5;
+  object-fit: contain;
+}
+
+.projects {
+  margin: 10rem 1rem 15rem 1rem;
+  text-align: center;
+}
+
+.featuredProjectsView {
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+}
