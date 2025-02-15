@@ -44,7 +44,7 @@ function HomePage() {
               This project is a application where you can create and edit pixel art art. 
               This project was created in my CS3505 class at the University of Utah. For this project I worked in a group with five other classmates.
               "
-              projectImage="src\assets\SpriteEditor.png"
+              projectImage="./src/assets/SpriteEditor.png"
               projectLink="https://github.com/CodingComp/a8-sprite-editor-f23-MAUIFanClub"
               projectNum={2}
               projectLanguages={["C++"]}
@@ -56,7 +56,7 @@ function HomePage() {
               This project is an application that teaches the user about logic gates. The logic gates are interactable, you can move them around and connect them to other gates.
               This project was also created in my CS3505 class at the University of Utah where I worked with the same group as the sprite editor project.
               "
-              projectImage="src\assets\EduApp.png"
+              projectImage="./src/assets/EduApp.png"
               projectLink="https://github.com/CodingComp/a9-edu-app-MAUIFanClub"
               projectNum={3}
               projectLanguages={["C++"]}

@@ -27,7 +27,6 @@ function LanguageBlips(languages: string[]) {
 }
 
 function FeaturedProject(props: ProjectProps) {
-  console.log(props.projectImage)
   return (
     <>
       <div className="featuredProject">
