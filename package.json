@@ -13,6 +13,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "babel-plugin-react-compiler": "^19.0.0-beta-30d8a17-20250209",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

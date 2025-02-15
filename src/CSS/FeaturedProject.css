@@ -2,16 +2,19 @@
   width: 30rem;
   height: 42rem;
   margin: auto;
+
   display: flex;
   flex-direction: column;
+
+  position: relative;
   
-  border: solid 0.25rem #9e9e9e9e;
+  border: solid 0.25rem #9e9e9e;
   border-radius: 0.8rem;
 
   background-color: rgb(65, 71, 80);
   box-shadow: 0 0.1rem .5rem 0 rgba(0, 0, 0, 0.2), 0 0.4rem 1.2rem 0 rgba(0, 0, 0, 0.19);
 
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
 }
 
 .featuredProject:hover {
@@ -23,44 +26,110 @@
   text-align: left;
 }
 
-.infoPanel {
-  margin: 0rem 1rem 1rem 1rem;
-  padding: 1rem;
-  flex: 0.85;
-  position: relative;
-  
-  text-align: left;
-
-  background-color: rgb(51, 55, 62);
-  border-radius: 0.6rem;
-  border: solid 0.15rem #9e9e9e;
-}
-
-.infoPanel p {
-  padding-right: 3rem;
-}
-
 .imagePanel {
   flex: 1;
-  margin: 0.5rem 1.3rem 1rem 1rem;
   position: relative;
+
+  grid-column-start: 1;
+  grid-column-end: five;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  
+  border-bottom: 0.25rem solid #9e9e9e;
+  overflow: hidden;
 }
 
 .projectImage {
   width: 100%;
   height: 100%;
-
+  
   object-fit: cover;
   box-shadow: -0.4rem 0rem 0.8rem 0 rgba(0, 0, 0, 0);
-  border-radius: 0.35rem;
-  box-shadow: 0rem 0.15rem 0.3rem 0.05rem rgba(0, 0, 0, 0.4);
-  border: solid 0.15rem #9e9e9e;
-  border-radius: 0.6rem;
+  border-radius: 0.6rem 0.6rem 0rem 0rem;
+}
+
+.numberIcon {
+  height: 2.5rem;
+  width: 4rem;
+
+  position: absolute;
+  top: 19.5rem;
+  left: 1rem;
+
+  border-radius: 0.4rem;
+  border: solid 0.25rem #9e9e9e9e;
+  background-color: #cacaca;
+  z-index: 1;
+}
+
+.numberIcon h1 {
+  margin: 0rem;
+
+  height: 100%;
+  width: 100%;
+
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.infoPanel {
+  position: relative;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  flex: 1;
+  
+  text-align: left;
+
+  background-color: rgb(51, 55, 62);
+  border-radius: 0rem 0rem 0.6rem 0.6rem;
+}
+
+.projectLanguages {
+  display: flex;
+  flex-direction: column;
+
+  margin: 2rem 1rem 1rem 1rem;
+  gap: 1rem;
+}
+
+.languageBlip {
+  width: 4rem;
+  height: 4rem;
+
+  background-color: rgb(152, 215, 236);
+  border-radius: 1rem;
+}
+
+.languageText {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+
+  font-size: 1rem;
+  text-align: center;
+  line-height: 4rem;
+}
+
+.projectName {
+  margin: 0;
+  padding: 0rem;
+
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.projectDescription {
+  margin: 0rem;
+  padding: 1rem;
+  font-size: 1.2rem;
 }
 
 .githubLink {
   position: absolute;
   bottom: 1.25rem;
+  left: 1rem;
+  
   padding: 0.6rem 0.9rem 0.6rem 0.9rem;
   border-radius: 0.5rem;
 

@@ -5,18 +5,21 @@
 
 .aboutMe {
   margin: 10rem 1rem 10rem 1rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .aboutMeInfo {
   margin: 2rem;
-  flex: 1;
   font-size: 1.5rem;
 }
 
 .aboutMe img {
-  flex: 0.5;
   object-fit: contain;
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+  margin: auto;
 }
 
 .projects {
@@ -25,7 +28,24 @@
 }
 
 .featuredProjectsView {
-  padding: 2rem;
-  display: flex;
-  gap: 2rem;
+  margin: 5rem 1rem 1rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.5rem;
+}
+
+@media (max-width: 1200px) {
+  .featuredProjectsView {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .aboutMe {
+    grid-template-columns: 1fr;
+  }
+
+  .featuredProjectsView {
+    grid-template-columns: 1fr;
+  }
 }

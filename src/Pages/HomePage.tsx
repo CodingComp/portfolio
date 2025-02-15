@@ -3,14 +3,13 @@ import FeaturedProject from "./FeaturedProject.tsx";
 import Navbar from "./Navbar.tsx";
 import Landing from "./Landing.tsx"
 
-
 function HomePage() {
   return (
     <>
       <Landing/>
       <Navbar/> 
       <div className="homePage">
-        <div className="aboutMe">
+        <div className="aboutMe" id="aboutMe">
           <div className="aboutMeInfo">
             <h1>About Me</h1>
             <p>
@@ -27,7 +26,7 @@ function HomePage() {
           </div>
           <img src="https://images.vexels.com/media/users/3/330267/isolated/preview/7edf5e15c1e58438aed35f4d59c0fe10-computer-screen-with-a-programming-code-on-it.png"/>
         </div>
-        <div className="projects">
+        <div className="projects" id="projects">
           <h1>Projects</h1>
           <div className="featuredProjectsView">
             <FeaturedProject
@@ -35,20 +34,32 @@ function HomePage() {
               projectDescription="This is my portfolio website created using React and TypeScript. This site is hosted through github pages."
               projectImage="https://payload-cms.code-b.dev/media/react-logo@3x%201react%20logo%20(1).svg"
               projectLink="https://github.com/CodingComp/portfolio"
+              projectNum={1}
+              projectLanguages={["HTML", "CSS", "TS"]}
             />
 
             <FeaturedProject
-              projectName="Test Project 1"
-              projectDescription="Testing Project 1"
-              projectImage="https://i.natgeofe.com/n/1ac334a0-ac4e-4745-a292-169b0a349e8b/grand-peaks-mount-cook.jpg"
-              projectLink=""
+              projectName="Sprite Editor"
+              projectDescription="
+              This project is a application where you can create and edit pixel art art. 
+              This project was created in my CS3505 class at the University of Utah. For this project I worked in a group with five other classmates.
+              "
+              projectImage="src\assets\SpriteEditor.png"
+              projectLink="https://github.com/CodingComp/a8-sprite-editor-f23-MAUIFanClub"
+              projectNum={2}
+              projectLanguages={["C++"]}
             />
 
             <FeaturedProject
-              projectName="Test Project 2"
-              projectDescription="Testing Project 2"
-              projectImage="https://media.istockphoto.com/id/477307170/photo/night-city-view-of-amsterdam-the-netherlands.jpg?s=612x612&w=0&k=20&c=ALSX7lL09Mf114X-b7txCUmI9fyN1VB_SCToEhXatu4="
-              projectLink=""
+              projectName="Education App"
+              projectDescription="
+              This project is an application that teaches the user about logic gates. The logic gates are interactable, you can move them around and connect them to other gates.
+              This project was also created in my CS3505 class at the University of Utah where I worked with the same group as the sprite editor project.
+              "
+              projectImage="src\assets\EduApp.png"
+              projectLink="https://github.com/CodingComp/a9-edu-app-MAUIFanClub"
+              projectNum={3}
+              projectLanguages={["C++"]}
             />
           </div>
         </div>
