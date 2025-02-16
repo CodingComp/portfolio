@@ -14,14 +14,7 @@ function HomePage() {
             <h1>About Me</h1>
             <p>
               Hi there, my name is Josh Daniels. I have been programming for about 6 years now. 
-              I have worked in many different languages, such as. C++, C#, C, Java, JavaScript / TypeScript, Rust, Python, LUA, Assembly, GLSL, HTML / CSS.
-              I first started by self teaching, from there I took courses in my highschool where I would go to take a concurrent enrollment through my local community college. 
-              I now am enrolled at the University of Utah persuing a Computer Science degree.
-            </p>
-            <p>
-              I am most skilled with the C languages. C++ is my favorite language to code in. I enjoy making software and anything to do with programming, one field I really love is game development. 
-              While I haven't created a full game I do enjoy working in 3D environments. 
-              I first started programming to learn how to use the Unity game engine, after learning more about programming over the years I switched to use Unreal Engine with C++.
+              I have worked with many different languages such as, C++, C#, C, Java, JavaScript / TypeScript, Rust, Python, LUA, Assembly, GLSL, HTML / CSS.
             </p>
           </div>
           <img src="https://images.vexels.com/media/users/3/330267/isolated/preview/7edf5e15c1e58438aed35f4d59c0fe10-computer-screen-with-a-programming-code-on-it.png"/>

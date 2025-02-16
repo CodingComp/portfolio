@@ -1,53 +1,47 @@
-@property --rot {
-  syntax: '<angle>';
-  inherits: false;
-  initial-value: 0deg;
-}
-
 .landing {
-  --rot: 0deg;
-
   width: 100%;
   height: 100vh;
-    
-  transition:--rot 0.5s;
-  background: linear-gradient(var(--rot), #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-  background-size: 300% 300%;
-  animation: gradient 30s ease infinite;
-  animation: gradientRot 20s linear infinite;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes gradient {
-  0% {
-	  background-position: 0% 50%;
-  }
-  50% {
-	  background-position: 100% 50%;
-  }
-  100% {
-	  background-position: 0% 50%;
-  }
-}
+.landingHeading {
+  background: rgba(255, 255, 255, 0.121);
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 2.8rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.25rem);
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  padding: 2rem;
 
-@keyframes gradientRot {
-  0% {
-    --rot: 0deg;
-  }
-  50% {
-    --rot: 180deg;
-  }
-  100% {
-    --rot: 360deg;
-  } 
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-delay: 0.75s;
+  animation-fill-mode: forwards;
 }
 
 .landingHeading h1, h3 {
-  position: relative;
-  margin: auto;
-  top: 35vh;
+  margin: 0;
   text-shadow: 0rem 0rem .5rem rgba(0, 0, 0, 0.5);
   text-align: center;
   user-select: none;
+
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-delay: 1.25s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .landingHeading h1 {
