@@ -1,5 +1,5 @@
 .homePage {
-  max-width: 100rem;
+  max-width: 105rem;
   margin: auto;
 }
 
@@ -12,11 +12,20 @@
 .aboutMeInfo {
   margin: 2rem;
   font-size: 1.5rem;
+
+  background: rgba(255, 255, 255, 0.121);
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 2.8rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.25rem);
+  border: 0.15rem solid rgba(255, 255, 255, 0.3);
+  padding: 2rem;
+
+  text-align: left;
 }
 
 .aboutMe img {
   object-fit: contain;
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   align-self: center;
   margin: auto;
@@ -28,10 +37,17 @@
 }
 
 .featuredProjectsView {
-  margin: 5rem 1rem 1rem 1rem;
+  margin: 5rem 0rem 0rem 0rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2.5rem;
+  gap: 2rem;
+
+  background: rgba(255, 255, 255, 0.121);
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 2.8rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.25rem);
+  border: 0.15rem solid rgba(255, 255, 255, 0.3);
+  padding: 2rem;
 }
 
 @media (max-width: 1200px) {

@@ -93,11 +93,12 @@
 }
 
 .languageBlip {
-  width: 4rem;
-  height: 4rem;
+  width: 3.75rem;
+  height: 3.75rem;
 
-  background-color: rgb(152, 215, 236);
+  background-color: rgb(39, 42, 47);
   border-radius: 1rem;
+  border: solid 0.2rem rgb(29, 31, 35);
 }
 
 .languageText {
@@ -137,6 +138,7 @@
   box-shadow: 0rem 0.15rem 0.3rem 0.05rem rgba(0, 0, 0, 0.4);
   color: white;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
 }
 
 .githubLink:hover {

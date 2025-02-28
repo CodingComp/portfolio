@@ -14,7 +14,10 @@ function HomePage() {
             <h1>About Me</h1>
             <p>
               Hi there, my name is Josh Daniels. I have been programming for about 6 years now. 
-              I have worked with many different languages such as, C++, C#, C, Java, JavaScript / TypeScript, Rust, Python, LUA, Assembly, GLSL, HTML / CSS.
+              I have worked with many different languages such as, C++, C#, C, Python, Java, JavaScript / TypeScript, Rust, LUA, Assembly, GLSL and HTML / CSS.
+            </p>
+            <p>
+              I am currently enrolled at the University of Utah, where I am studying Computer Science. I'm currently looking for internships and job opportunities.
             </p>
           </div>
           <img src="https://images.vexels.com/media/users/3/330267/isolated/preview/7edf5e15c1e58438aed35f4d59c0fe10-computer-screen-with-a-programming-code-on-it.png"/>
