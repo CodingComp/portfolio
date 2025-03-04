@@ -14,14 +14,16 @@ var timerMade = false;
 
 var points: Point[] = [];
 var maxPoints = 100;
-const connectDistance = 150;
+var connectDistance = 150;
 
 function initializePoints() {
     // Scales points with screen size
     if (window.innerWidth <= 800) {
-        maxPoints = 50;
+        maxPoints = 40;
+        connectDistance = 100;
     } else {
         maxPoints = 100;
+        connectDistance = 150;
     }
     
     for (var i = 0; i < maxPoints; i++) {
@@ -99,7 +101,13 @@ function LandingCanvas() {
         const canvas = document.getElementById("bgCanvas") as HTMLCanvasElement;
         const context = canvas!.getContext("2d") as CanvasRenderingContext2D;
 
+        // Handles resize of browser window for canvas
         function handleResize() {
+            // Doesnt resize if width is mobile sized & width hasn't changed. This is done to make it smoother when scrolling on mobile
+            if (window.innerWidth <= 800 && canvas!.width == window.innerWidth) {
+                return;
+            }
+
             canvas!.width = window.innerWidth;
             canvas!.height = window.innerHeight;
             

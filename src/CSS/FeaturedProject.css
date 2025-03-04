@@ -126,7 +126,7 @@
   font-size: 1.2rem;
 }
 
-.githubLink {
+.linkBtn {
   position: absolute;
   bottom: 1.25rem;
   left: 1rem;
@@ -141,10 +141,10 @@
   text-decoration: none;
 }
 
-.githubLink:hover {
+.linkBtn:hover {
   background-color: #3facdf;
 }
 
-.githubLink:active {
+.linkBtn:active {
   transform: scale(0.95);
 }

@@ -25,10 +25,13 @@
 
 .aboutMe img {
   object-fit: contain;
-  max-width: 50%;
+  max-width: 72%;
   height: auto;
   align-self: center;
   margin: auto;
+  border-radius: 1rem;
+  border: 0.15rem solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0.25rem 2.8rem rgba(0, 0, 0, 0.1);
 }
 
 .projects {

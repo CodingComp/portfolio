@@ -6,6 +6,7 @@ type ProjectProps = {
   projectDescription: string;
   projectImage: string;
   projectLink: string;
+  projectVideo?: string;
   projectNum: number;
   projectLanguages: string[];
 };
@@ -47,9 +48,17 @@ function FeaturedProject(props: ProjectProps) {
           <div className="infoDetails">
             <h2 className="projectName">{props.projectName}</h2>
             <p className="projectDescription">{props.projectDescription}</p>
-            <a href={props.projectLink} target="_blank" className="githubLink">
+            <a href={props.projectLink} target="_blank" className="linkBtn">
               GitHub
             </a>
+            {
+              props.projectVideo != undefined ? 
+              (
+                <a href={props.projectVideo} target="_blank" className="linkBtn" style={{left: "6.5rem"}}>
+                  Video Demo
+                </a>
+              ) : (<></>)
+            }
           </div>
         </div>
       </div>

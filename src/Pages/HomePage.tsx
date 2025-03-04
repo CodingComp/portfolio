@@ -20,7 +20,7 @@ function HomePage() {
               I am currently enrolled at the University of Utah, where I am studying Computer Science. I'm currently looking for internships and job opportunities.
             </p>
           </div>
-          <img src="https://images.vexels.com/media/users/3/330267/isolated/preview/7edf5e15c1e58438aed35f4d59c0fe10-computer-screen-with-a-programming-code-on-it.png"/>
+          <img src="./LanguageChart.png"/>
         </div>
         <div className="projects" id="projects">
           <h1>Projects</h1>
@@ -37,12 +37,13 @@ function HomePage() {
             <FeaturedProject
               projectName="Sprite Editor"
               projectDescription="
-              This project is a application where you can create and edit pixel art art. 
+              This project is a application where you can create and edit pixel art. 
               This project was created in my CS3505 class at the University of Utah. For this project I worked in a group with five other classmates.
               "
               projectImage="./SpriteEditor.png"
               projectLink="https://github.com/CodingComp/a8-sprite-editor-f23-MAUIFanClub"
               projectNum={2}
+              projectVideo="https://youtu.be/bxtDRlfBWJs"
               projectLanguages={["C++"]}
             />
 
@@ -55,6 +56,7 @@ function HomePage() {
               projectImage="./EduApp.png"
               projectLink="https://github.com/CodingComp/a9-edu-app-MAUIFanClub"
               projectNum={3}
+              projectVideo="https://youtu.be/UsCjhnEPMBg"
               projectLanguages={["C++"]}
             />
           </div>
