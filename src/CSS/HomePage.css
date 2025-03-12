@@ -44,6 +44,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
+  row-gap: 3rem;
 
   background: rgba(255, 255, 255, 0.121);
   border-radius: 1rem;

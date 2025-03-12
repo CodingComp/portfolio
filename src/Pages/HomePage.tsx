@@ -1,3 +1,4 @@
+
 import "../CSS/HomePage.css";
 import FeaturedProject from "./FeaturedProject.tsx";
 import Navbar from "./Navbar.tsx";
@@ -27,8 +28,9 @@ function HomePage() {
           <div className="featuredProjectsView">
             <FeaturedProject
               projectName="Portfolio Website"
-              projectDescription="This is my portfolio website created using React and TypeScript. This site is hosted through github pages."
-              projectImage="https://payload-cms.code-b.dev/media/react-logo@3x%201react%20logo%20(1).svg"
+              projectDescription="My portfolio website, the site you are currently viewing! Here I hope to show my knowledge and skills in the software world. 
+              This site is hosted through github pages."
+              projectImage="./Portfolio.png"
               projectLink="https://github.com/CodingComp/portfolio"
               projectNum={1}
               projectLanguages={["HTML", "CSS", "TS"]}
@@ -48,19 +50,32 @@ function HomePage() {
             />
 
             <FeaturedProject
-              projectName="Education App"
-              projectDescription="
-              This project is an application that teaches the user about logic gates. The logic gates are interactable, you can move them around and connect them to other gates.
-              This project was also created in my CS3505 class at the University of Utah where I worked with the same group as the sprite editor project.
-              "
-              projectImage="./EduApp.png"
-              projectLink="https://github.com/CodingComp/a9-edu-app-MAUIFanClub"
-              projectNum={3}
-              projectVideo="https://youtu.be/UsCjhnEPMBg"
-              projectLanguages={["C++"]}
+                projectName="Education App"
+                projectDescription="
+                This ducation application is about logic gates. You can move the logic gate elements around and connect them to other gates.
+                This project was also created in my CS3505 where I worked with the same group as the sprite editor project.
+                "
+                projectImage="./EduApp.png"
+                projectLink="https://github.com/CodingComp/a9-edu-app-MAUIFanClub"
+                projectNum={3}
+                projectVideo="https://youtu.be/UsCjhnEPMBg"
+                projectLanguages={["C++"]}
+            />
+
+            <FeaturedProject
+                projectName="Anagram Solver"
+                projectDescription="
+                 This project is hosted on this website! You can enter a word and recieve a list of anagrams related to said word. The API is hosted on azure and handles
+                 finding the anagrams. You can demo it yourself by clicking the 'Live Demo' button below.
+                "
+                projectImage="./AnagramSolver.png"
+                projectLink="https://github.com/CodingComp/a9-edu-app-MAUIFanClub"
+                projectNum={4}
+                liveDemoLink="AnagramSolver"
+                projectLanguages={["HTML", "TS", "C#"]}
             />
           </div>
-        </div>
+        </div>       
       </div>
     </>
   );
