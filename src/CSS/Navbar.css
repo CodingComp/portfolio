@@ -1,0 +1,58 @@
+.navbar {
+  position: sticky;
+  top: 0;
+
+  height: 3.5rem;
+  width: 100%;
+
+  z-index: 2;
+
+
+  backdrop-filter: blur(10px);
+  background-color: rgb(36, 36, 36, 0.6);
+  box-shadow: 0rem 0rem 0.6rem 0.1rem rgba(0, 0, 0, 0.8);
+}
+
+.navbarIcon {
+  height: 3rem;
+  width: 3rem;
+  margin: 0.2rem 0rem 0rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0.1rem 0.2rem 0.1rem rgba(12, 12, 12, 0.996);
+}
+
+.title {
+  position: absolute;
+  top: -1.15rem;
+  left: 5rem;
+
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 0rem 0rem 0.5rem rgb(0, 0, 0);
+}
+
+.links {
+  position: absolute;
+  bottom: 0.6rem;
+  left: 18rem;
+}
+
+.links a {
+  margin: 1rem;
+  
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0rem 0rem 0.5rem rgb(0, 0, 0);
+}
+
+.links a:hover {
+  color: rgb(132, 225, 238);
+  transition: all 0.2s ease;
+}
+
+.links a:active {
+  color: rgb(144, 160, 177);
+  transition: all 0.1s ease;
+}
