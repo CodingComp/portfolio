@@ -7,9 +7,9 @@ import "./CSS/index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio">
         <Routes>
-            <Route path="/" element={<HomePage />}></Route>
+            <Route path="/portfolio" element={<HomePage />}></Route>
             <Route path="/AnagramSolver" element={<AnagramProject />}></Route>
         </Routes>
     </BrowserRouter>
