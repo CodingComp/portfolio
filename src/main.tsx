@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import HomePage from "./Pages/HomePage.tsx";
@@ -10,6 +10,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/portfolio" element={<HomePage />} />
         <Route path="/AnagramSolver" element={<AnagramProject />} />
       </Routes>
     </BrowserRouter>
