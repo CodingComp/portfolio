@@ -7,7 +7,7 @@ import "./CSS/index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <HashRouter basename='/'>
+    <HashRouter basename='/portfolio'>
         <Route path="/" element={<HomePage />} />
         <Route path="/AnagramSolver" element={<AnagramProject />} />
     </HashRouter>
