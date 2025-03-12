@@ -7,13 +7,10 @@ import "./CSS/index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route index element={<HomePage />} />
         <Route path="/AnagramSolver" element={<AnagramProject />} />
-          
-        <Route path="/portfolio" element={<HomePage />} />
-        <Route path="/portfolio/AnagramSolver" element={<AnagramProject />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
