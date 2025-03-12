@@ -71,7 +71,7 @@ function HomePage() {
                 projectImage="./AnagramSolver.png"
                 projectLink="https://github.com/CodingComp/a9-edu-app-MAUIFanClub"
                 projectNum={4}
-                liveDemoLink="/portfolio/AnagramSolver"
+                liveDemoLink="AnagramSolver"
                 projectLanguages={["HTML", "TS", "C#"]}
             />
           </div>
