@@ -10,8 +10,10 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/portfolio" element={<HomePage />} />
         <Route path="/AnagramSolver" element={<AnagramProject />} />
+          
+        <Route path="/portfolio" element={<HomePage />} />
+        <Route path="/portfolio/AnagramSolver" element={<AnagramProject />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
