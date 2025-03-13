@@ -63,7 +63,7 @@ function FeaturedProject(props: ProjectProps) {
             {
               props.liveDemoLink != undefined ? 
               (
-                  <a href={/#/+props.liveDemoLink} target="_blank" className="linkBtn" style={{left: "6.5rem"}}>
+                  <a href={"/"+props.liveDemoLink} target="_blank" className="linkBtn" style={{left: "6.5rem"}}>
                     Live Demo 
                   </a>
               ) : (<></>)
