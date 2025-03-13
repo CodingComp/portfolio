@@ -21,7 +21,7 @@ function HomePage() {
               I am currently enrolled at the University of Utah, where I am studying Computer Science. I'm currently looking for internships and job opportunities.
             </p>
           </div>
-          <img src="./LanguageChart.png"/>
+          <img src="/portfolio/LanguageChart.png"/>
         </div>
         <div className="projects" id="projects">
           <h1>Projects</h1>
@@ -42,7 +42,7 @@ function HomePage() {
               This project is a application where you can create and edit pixel art. 
               This project was created in my CS3505 class at the University of Utah. For this project I worked in a group with five other classmates.
               "
-              projectImage="./SpriteEditor.png"
+              projectImage="SpriteEditor.png"
               projectLink="https://github.com/CodingComp/a8-sprite-editor-f23-MAUIFanClub"
               projectNum={2}
               projectVideo="https://youtu.be/bxtDRlfBWJs"
@@ -55,7 +55,7 @@ function HomePage() {
                 This ducation application is about logic gates. You can move the logic gate elements around and connect them to other gates.
                 This project was also created in my CS3505 where I worked with the same group as the sprite editor project.
                 "
-                projectImage="./EduApp.png"
+                projectImage="EduApp.png"
                 projectLink="https://github.com/CodingComp/a9-edu-app-MAUIFanClub"
                 projectNum={3}
                 projectVideo="https://youtu.be/UsCjhnEPMBg"
@@ -68,7 +68,7 @@ function HomePage() {
                  This project is hosted on this website! You can enter a word and recieve a list of anagrams related to said word. The API is hosted on azure and handles
                  finding the anagrams. You can demo it yourself by clicking the 'Live Demo' button below.
                 "
-                projectImage="./AnagramSolver.png"
+                projectImage="AnagramSolver.png"
                 projectLink="https://github.com/CodingComp/a9-edu-app-MAUIFanClub"
                 projectNum={4}
                 liveDemoLink="AnagramSolver"

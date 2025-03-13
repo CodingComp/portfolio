@@ -15,25 +15,28 @@ function AnagramProject() {
     const [submitBtnState, setSubmitBtnState] = useState<boolean>(false);
     const [isLoading, setIsLoading] = useState<boolean>(false);
 
+    
     // Anagram to display
     const request: JSX.Element = getRequestElement();
     
     const submitBtn: JSX.Element = submitBtnState
         ? <a className="submitBtn" onClick={() => {
-                fetchAnagramResults(inputWord)
+                fetchAnagramResults(inputWord);
         }}>Submit</a>
         : <a className="disabledBtn">Submit</a>;
     
+    // Creates the list of previous anagrams searched for
     const prevAnagramsElement: JSX.Element = anagramHistory === undefined
         ? <></>
         : <div className="prevAnagramsContainer">
             <div className="shadow"/>
             <div className="prevAnagrams">
                 {
-                    anagramHistory.map((previousAnagram, index) =>
-                        <h3 key={index} className="previousAnagram"
+                    anagramHistory.map((previousAnagram: AnagramSolver, index: number) =>
+                        <h3 key={index} 
+                            className={(previousAnagram.word === displayedAnagram?.word ? "selectedPreviousAnagram" : "previousAnagram")}
                             onClick={()=>{displayPreviousAnagram(previousAnagram)}}
-                            style={{ padding: 0}}>
+                            style={{padding: 0}}>
                             {previousAnagram.word}
                         </h3>
                     )
@@ -42,6 +45,7 @@ function AnagramProject() {
         </div>;
 
     const fetchingData: JSX.Element = isLoading ? <h1 className="loading">Loading...</h1> : <></>;
+    
     
     function handleInputWordChange(e: ChangeEvent<HTMLInputElement>) {
         const newWord: string = e.target.value;
@@ -52,14 +56,14 @@ function AnagramProject() {
         else if (!submitBtnState) setSubmitBtnState(true);
         setInputWord(newWord);
     }
-
+    
     
     async function fetchAnagramResults(word: string) {
         if (word === "") return;
 
         // Checks if word has been used before, if so it doesn't make another request
         let wordUsed: boolean = false;
-        anagramHistory.map((anagram) => {
+        anagramHistory.map((anagram: AnagramSolver) => {
             if (anagram.word === word) {
                 wordUsed = true;
                 // Display the previous anagram results
@@ -75,7 +79,7 @@ function AnagramProject() {
         setIsLoading(true);
         
         // Fetches Anagram results from API
-        const response = await fetch(APIUrl + word);
+        const response: Response = await fetch(APIUrl + word);
         if (response.ok) {
             const data = await response.json();
             setDisplayedAnagram(data);
@@ -119,7 +123,6 @@ function AnagramProject() {
             </>
         );
     }
-    
     
     
     return (

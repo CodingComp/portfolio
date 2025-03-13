@@ -34,7 +34,7 @@ function FeaturedProject(props: ProjectProps) {
       <div className="featuredProject">
         <div className="imagePanel">
           <img
-            src={props.projectImage}
+            src={"/portfolio/"+props.projectImage}
             alt="Project Image"
             className="projectImage"
           />
@@ -63,7 +63,7 @@ function FeaturedProject(props: ProjectProps) {
             {
               props.liveDemoLink != undefined ? 
               (
-                  <a href={"/"+props.liveDemoLink} target="_blank" className="linkBtn" style={{left: "6.5rem"}}>
+                  <a href={"#/"+props.liveDemoLink} target="_blank" className="linkBtn" style={{left: "6.5rem"}}>
                     Live Demo 
                   </a>
               ) : (<></>)
