@@ -123,11 +123,11 @@ function AnagramProject() {
             </>
         );
     }
-    
-    
+
+
     return (
         <div className="anagramElements">
-            
+
             {/* Inputs Panel */}
             <div className="inputsPanel">
                 <h1 className="panelDetails">Anagram Solver</h1>
@@ -162,7 +162,7 @@ function AnagramProject() {
                     {request}
                 </div>
             </div>
-            
+
         </div>
     );
 }

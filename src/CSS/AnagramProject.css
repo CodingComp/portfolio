@@ -1,7 +1,7 @@
 .anagramElements {
     width: 100%;
     height: 100vh;
-
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,6 +38,8 @@
     background: rgba(255, 255, 255, 0.121);
     box-shadow: 0 0.25rem 2.8rem rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(0.25rem);
+    
+    transition: 0.3s ease;
 }
 
 .inputsPanel h1 {
@@ -237,7 +239,7 @@
 }
 
 .selectedPreviousAnagram:hover {
-    background-color: #4b6577;
+    background-color: #577c93;
 }
 
 
@@ -255,10 +257,11 @@
     border-radius: 0.65rem;
     border: 0.1rem solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 0 0.4rem 0.05rem rgba(18, 18, 18, 0.7);
+    overflow: hidden;
 }
 
 .anagramsContainer {
-    height: 83%;
+    height: calc(100% - 8rem);
     margin-top: 1.5rem;
     
     padding: 0 1rem 0 1rem;
@@ -295,6 +298,9 @@
 
     backdrop-filter: blur(0.25rem);
     background: rgba(255, 255, 255, 0.121);
+    transition: 0.3s ease;
+
+    overflow: hidden;
 }
 
 .requestPanel h1 {
@@ -367,7 +373,7 @@
  */
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) and (orientation: portrait) {
     .inputsPanelContent {
         height: calc(100% - 8rem);
     }
@@ -377,9 +383,10 @@
     }
 
     .inputsPanel {
-        margin: 1rem 4rem 4rem 4rem;
-        height: 32rem;
+        flex: 0.5;
+        max-height: 24rem;
         width: 85%;
+        margin: 1rem 4rem 4rem 4rem;
     }
     
     .inputsPanelContent {
@@ -388,9 +395,8 @@
     
     .inputsGrid {
         flex: 1;
-        padding-top: 3rem;
+        padding-top: 1.2rem;
         grid-template-rows: 1fr 0.9fr 0.6fr 0.6fr;
-        height: 22rem;
     }
 
     .anagramHistory {
@@ -408,9 +414,21 @@
     }
 
     .requestPanel {
-        margin: 4rem 4rem 1rem 4rem;
-        height: 48rem;
+        flex: 1;
         width: 85%;
+        margin: 2rem 4rem 1rem 4rem;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .requestPanel, .inputsPanel {
+        height: 85%;
+    }
+}
+
+@media screen and (max-height: 1000px) and (max-width: 600px) {
+    .anagramElements {
+        height: 82vh;
     }
 }
 
