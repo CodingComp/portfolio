@@ -1,4 +1,5 @@
 import "../CSS/Navbar.css";
+import {HashLink} from "react-router-hash-link"
 
 function Navbar() {
   return (
@@ -7,9 +8,9 @@ function Navbar() {
         <img src="https://avatars.githubusercontent.com/u/82977701?v=4" className="navbarIcon"/>
         <h1 className="title">Josh Daniels</h1>
         <div className="links">
-          <a href="#aboutMe">About Me</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <HashLink to="#aboutMe">About Me</HashLink>
+          <HashLink to="#projects">Projects</HashLink>
+          <HashLink to="#contact">Contact</HashLink>
         </div>
       </div>
     </>

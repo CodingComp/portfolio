@@ -104,7 +104,7 @@ function AnagramProject() {
 
         const anagrams: JSX.Element | JSX.Element[] = displayedAnagram.anagrams.length == 0 ? <h2>No Anagrams Found . . .</h2> :
             displayedAnagram.anagrams.map((anagram, index) =>
-                <div key={anagram} className="foundAnagramEntry">
+                <div key={displayedAnagram.word+"-"+anagram} className="foundAnagramEntry">
                     <h2 className="foundAnagramIndex" style={{animationDelay:((index + 1)/8).toString()+"s"}}>{index+1}.</h2>
                     <h2 className="foundAnagram" style={{animationDelay:((index + 1)/8).toString()+"s"}}>
                         {anagram}
