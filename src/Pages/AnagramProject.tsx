@@ -6,7 +6,7 @@ interface AnagramSolver {
     anagrams: string[];
 }
 
-const APIUrl = 'https://portfolio-anagram-api-ckdjcrfsava7h8f3.westus-01.azurewebsites.net/AnagramSolver/';
+const APIUrl = 'https://codingcomp-portfolio-api.azurewebsites.net/AnagramSolver/';
 
 function AnagramProject() {
     const [inputWord, setInputWord] = useState('');
