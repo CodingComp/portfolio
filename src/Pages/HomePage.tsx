@@ -71,8 +71,20 @@ function HomePage() {
                 projectImage="AnagramSolver.png"
                 projectLink="https://github.com/CodingComp/a9-edu-app-MAUIFanClub"
                 projectNum={4}
-                liveDemoLink="AnagramSolver"
+                liveDemoLink="#/AnagramSolver"
                 projectLanguages={["HTML", "TS", "C#"]}
+            />
+
+            <FeaturedProject
+                projectName="Flight Visualizer"
+                projectDescription="
+                 A unity project hosted on itch.io where you can visualize the places you have visited by using flight numbers / callsigns.
+                "
+                projectImage="FlightVisualizer.png"
+                projectLink="https://github.com/CodingComp/FlightVisualizer"
+                projectNum={5}
+                liveDemoLink="https://compgeek.itch.io/flight-visualizer"
+                projectLanguages={["C#"]}
             />
           </div>
         </div>       
