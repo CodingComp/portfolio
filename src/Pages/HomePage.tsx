@@ -18,7 +18,7 @@ function HomePage() {
               I have worked with many different languages such as, C++, C#, C, Python, Java, JavaScript / TypeScript, Rust, LUA, Assembly, GLSL and HTML / CSS.
             </p>
             <p>
-              I am enrolled at the University of Utah, where I am studying Computer Science. Currently I am working as a software engineer intern at LVT. 
+              I am enrolled at the University of Utah, where I am studying Computer Science. I worked as a software engineer intern at LVT (LiveView Technologies). At LVT I worked with custom in house hardware, programming in C++ directly to circuit boards.
             </p>
           </div>
           <img src="/portfolio/LanguageChart.png"/>
